@@ -1,5 +1,5 @@
 from pathlib import Path
-APP_NAME = "HE-DSS 4.5"
+APP_NAME = "HE-DSS"
 APP_SUBTITLE = "Prototyp analizy CALL–OBJECTIVE i oceny 12 determinant MDSM"
 VERSION = '4.2'
 ROOT_DIR = Path(__file__).resolve().parent

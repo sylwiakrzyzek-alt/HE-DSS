@@ -279,7 +279,7 @@ def page_results() -> None:
         st.info('Najpierw wykonaj analizę.')
         return
     alignment = analysis.get('alignment') or {}
-    st.title('Wyniki HE-DSS 4.5')
+    st.title('Wyniki HE-DSS')
     c1, c2, c3, c4 = st.columns(4)
     c1.metric('CALL–OBJECTIVE (SAS)', f"{alignment.get('structural_alignment_score', 0)*100:.1f}%")
     c2.metric('Wynik MDSM', f"{result['overall']:.1f}/100")
@@ -350,7 +350,7 @@ def report_html(a, v, analysis, result, saved) -> str:
     table{{border-collapse:collapse;width:100%;margin:12px 0 24px}}th,td{{border:1px solid #ccd5e0;padding:8px;text-align:left;vertical-align:top}}
     h1,h2{{color:#16345f}}.box{{padding:14px 18px;background:#eef4fb;border-left:5px solid #2559a7;margin:14px 0}}
     </style></head><body>
-    <h1>HE-DSS 4.5 — raport diagnostyczny</h1>
+    <h1>HE-DSS — raport diagnostyczny</h1>
     <p><b>Projekt:</b> {html.escape(a['project_name'])} ({html.escape(a['acronym'] or '')})<br>
     <b>Call:</b> {html.escape(a['call_id'] or '—')}<br><b>Wersja:</b> {v['version_no']}</p>
     <div class="box"><b>Executive Summary</b><br>{html.escape(analysis.get('executive_summary',''))}</div>
