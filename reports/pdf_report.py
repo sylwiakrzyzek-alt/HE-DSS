@@ -13,26 +13,58 @@ from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, Tabl
 
 
 def _font_names():
+    # Matplotlib bundles DejaVu Sans on every supported platform. Using its
+    # bundled TTF files makes Polish glyph support independent of the OS image
+    # used by Streamlit Community Cloud.
+    try:
+        import matplotlib
+        fonts_dir = Path(matplotlib.get_data_path()) / 'fonts' / 'ttf'
+        regular = fonts_dir / 'DejaVuSans.ttf'
+        bold = fonts_dir / 'DejaVuSans-Bold.ttf'
+        if regular.exists() and bold.exists():
+            pdfmetrics.registerFont(TTFont('HEDSS', str(regular)))
+            pdfmetrics.registerFont(TTFont('HEDSS-Bold', str(bold)))
+            pdfmetrics.registerFontFamily(
+                'HEDSS', normal='HEDSS', bold='HEDSS-Bold',
+                italic='HEDSS', boldItalic='HEDSS-Bold'
+            )
+            addMapping('HEDSS', 0, 0, 'HEDSS')
+            addMapping('HEDSS', 1, 0, 'HEDSS-Bold')
+            addMapping('HEDSS', 0, 1, 'HEDSS')
+            addMapping('HEDSS', 1, 1, 'HEDSS-Bold')
+            return 'HEDSS', 'HEDSS-Bold'
+    except Exception:
+        pass
+
+    # Local fallback for Windows/Linux development environments.
     regular_candidates = [
-        Path('C:/Windows/Fonts/arial.ttf'), Path('C:/Windows/Fonts/calibri.ttf'),
-        Path('/usr/share/fonts/truetype/noto/NotoSans-Regular.ttf'),
-        Path('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf')]
+        Path('C:/Windows/Fonts/arial.ttf'),
+        Path('C:/Windows/Fonts/calibri.ttf'),
+        Path('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'),
+        Path('/usr/share/fonts/truetype/liberation2/LiberationSans-Regular.ttf'),
+    ]
     bold_candidates = [
-        Path('C:/Windows/Fonts/arialbd.ttf'), Path('C:/Windows/Fonts/calibrib.ttf'),
-        Path('/usr/share/fonts/truetype/noto/NotoSans-Bold.ttf'),
-        Path('/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf')]
+        Path('C:/Windows/Fonts/arialbd.ttf'),
+        Path('C:/Windows/Fonts/calibrib.ttf'),
+        Path('/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'),
+        Path('/usr/share/fonts/truetype/liberation2/LiberationSans-Bold.ttf'),
+    ]
     regular = next((p for p in regular_candidates if p.exists()), None)
     bold = next((p for p in bold_candidates if p.exists()), None)
-    if regular and bold:
-        pdfmetrics.registerFont(TTFont('HEDSS', str(regular)))
-        pdfmetrics.registerFont(TTFont('HEDSS-Bold', str(bold)))
-        pdfmetrics.registerFontFamily('HEDSS', normal='HEDSS', bold='HEDSS-Bold', italic='HEDSS', boldItalic='HEDSS-Bold')
-        addMapping('HEDSS', 0, 0, 'HEDSS')
-        addMapping('HEDSS', 1, 0, 'HEDSS-Bold')
-        addMapping('HEDSS', 0, 1, 'HEDSS')
-        addMapping('HEDSS', 1, 1, 'HEDSS-Bold')
-        return 'HEDSS','HEDSS-Bold'
-    return 'Helvetica','Helvetica-Bold'
+    if not (regular and bold):
+        raise RuntimeError('Nie znaleziono fontu Unicode wymaganego do wygenerowania raportu PDF.')
+
+    pdfmetrics.registerFont(TTFont('HEDSS', str(regular)))
+    pdfmetrics.registerFont(TTFont('HEDSS-Bold', str(bold)))
+    pdfmetrics.registerFontFamily(
+        'HEDSS', normal='HEDSS', bold='HEDSS-Bold',
+        italic='HEDSS', boldItalic='HEDSS-Bold'
+    )
+    addMapping('HEDSS', 0, 0, 'HEDSS')
+    addMapping('HEDSS', 1, 0, 'HEDSS-Bold')
+    addMapping('HEDSS', 0, 1, 'HEDSS')
+    addMapping('HEDSS', 1, 1, 'HEDSS-Bold')
+    return 'HEDSS', 'HEDSS-Bold'
 
 
 def build_pdf_report(a, v, analysis, result, saved, determinants, score_label):
