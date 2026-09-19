@@ -30,7 +30,7 @@ def _font_names():
 def build_pdf_report(a, v, analysis, result, saved, determinants, score_label):
     buf=BytesIO(); font,bold=_font_names()
     doc=SimpleDocTemplate(buf,pagesize=A4,rightMargin=16*mm,leftMargin=16*mm,topMargin=15*mm,bottomMargin=15*mm,
-                          title='HE-DSS 4.5 - raport diagnostyczny')
+                          title='HE-DSS - raport diagnostyczny')
     styles=getSampleStyleSheet()
     styles.add(ParagraphStyle(name='Title2',parent=styles['Title'],fontName=bold,fontSize=20,leading=24,textColor=colors.HexColor('#16345f'),spaceAfter=10))
     styles.add(ParagraphStyle(name='H2x',parent=styles['Heading2'],fontName=bold,fontSize=14,leading=18,textColor=colors.HexColor('#16345f'),spaceBefore=10,spaceAfter=7))
@@ -38,19 +38,25 @@ def build_pdf_report(a, v, analysis, result, saved, determinants, score_label):
     styles.add(ParagraphStyle(name='Smallx',parent=styles['BodyText'],fontName=font,fontSize=7.3,leading=9))
     styles.add(ParagraphStyle(name='Centerx',parent=styles['BodyText'],fontName=bold,fontSize=9,alignment=TA_CENTER))
     story=[]
-    story.append(Paragraph('HE-DSS 4.5 - raport diagnostyczny',styles['Title2']))
+    story.append(Paragraph('HE-DSS - raport diagnostyczny',styles['Title2']))
     story.append(Paragraph(f"<b>Projekt:</b> {a['project_name']} ({a['acronym'] or '-'})<br/><b>Call:</b> {a['call_id'] or '-'}<br/><b>Wersja:</b> {v['version_no']}",styles['Bodyx']))
     story.append(Spacer(1,5*mm))
     summary=analysis.get('executive_summary','')
     t=Table([[Paragraph('<b>Executive Summary</b><br/>'+summary,styles['Bodyx'])]],colWidths=[176*mm])
     t.setStyle(TableStyle([('BACKGROUND',(0,0),(-1,-1),colors.HexColor('#eef4fb')),('BOX',(0,0),(-1,-1),0.7,colors.HexColor('#2559a7')),('LEFTPADDING',(0,0),(-1,-1),8),('RIGHTPADDING',(0,0),(-1,-1),8),('TOPPADDING',(0,0),(-1,-1),8),('BOTTOMPADDING',(0,0),(-1,-1),8)])); story.append(t)
     alignment=analysis.get('alignment') or {}
-    story.append(Paragraph('CALL-OBJECTIVE Alignment',styles['H2x']))
-    story.append(Paragraph(f"<b>Overall alignment:</b> {alignment.get('overall',0):.1f}% &nbsp;&nbsp; <b>Confidence:</b> {alignment.get('confidence','-')}",styles['Bodyx']))
-    area_data=[[Paragraph('<b>Obszar</b>',styles['Smallx']),Paragraph('<b>Wynik</b>',styles['Smallx']),Paragraph('<b>Potencjalnie brakujące terminy</b>',styles['Smallx'])]]
-    for x in alignment.get('areas',[]): area_data.append([Paragraph(str(x['area']),styles['Smallx']),Paragraph(f"{x['score']:.1f}%",styles['Smallx']),Paragraph(', '.join(x.get('missing',[])) or '-',styles['Smallx'])])
-    tab=Table(area_data,colWidths=[48*mm,24*mm,104*mm],repeatRows=1)
-    tab.setStyle(TableStyle([('GRID',(0,0),(-1,-1),0.4,colors.HexColor('#b9c4d0')),('BACKGROUND',(0,0),(-1,0),colors.HexColor('#e8eef6')),('VALIGN',(0,0),(-1,-1),'TOP'),('LEFTPADDING',(0,0),(-1,-1),5),('RIGHTPADDING',(0,0),(-1,-1),5),('TOPPADDING',(0,0),(-1,-1),4),('BOTTOMPADDING',(0,0),(-1,-1),4)])); story.append(tab)
+    story.append(Paragraph('CALL–OBJECTIVE',styles['H2x']))
+    call_data=[
+        [Paragraph('<b>Wskaźnik</b>',styles['Smallx']), Paragraph('<b>Wartość</b>',styles['Smallx'])],
+        ['Cosine similarity', f"{alignment.get('cosine_similarity',0)*100:.1f}%"],
+        ['Pokrycie TOP50', f"{alignment.get('top50_coverage',0)*100:.1f}%"],
+        ['Narrative Coverage', f"{alignment.get('narrative_coverage',0)*100:.1f}%"],
+        ['Order Agreement', f"{alignment.get('order_agreement',0)*100:.1f}%"],
+        ['Narrative Completeness', f"{alignment.get('narrative_completeness',0)*100:.1f}%"],
+        ['Structural Alignment Score', f"{alignment.get('structural_alignment_score',0)*100:.1f}%"],
+    ]
+    tab=Table(call_data,colWidths=[118*mm,58*mm],repeatRows=1)
+    tab.setStyle(TableStyle([('GRID',(0,0),(-1,-1),0.4,colors.HexColor('#b9c4d0')),('BACKGROUND',(0,0),(-1,0),colors.HexColor('#e8eef6')),('VALIGN',(0,0),(-1,-1),'TOP'),('FONTNAME',(0,1),(-1,-1),font),('FONTSIZE',(0,1),(-1,-1),7.3),('LEFTPADDING',(0,0),(-1,-1),5),('RIGHTPADDING',(0,0),(-1,-1),5),('TOPPADDING',(0,0),(-1,-1),4),('BOTTOMPADDING',(0,0),(-1,-1),4)])); story.append(tab)
     story.append(Paragraph(f'{len(determinants)} determinant MDSM',styles['H2x']))
     story.append(Paragraph(f"<b>Wynik syntetyczny:</b> {result['overall']:.1f}/100 &nbsp;&nbsp; <b>Poziom:</b> {result['band']}",styles['Bodyx']))
     det_data=[[Paragraph('<b>ID</b>',styles['Smallx']),Paragraph('<b>Determinanta</b>',styles['Smallx']),Paragraph('<b>Waga</b>',styles['Smallx']),Paragraph('<b>Ocena</b>',styles['Smallx']),Paragraph('<b>Interpretacja</b>',styles['Smallx'])]]
