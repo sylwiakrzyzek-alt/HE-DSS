@@ -8,21 +8,29 @@ from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib.units import mm
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
+from reportlab.lib.fonts import addMapping
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, PageBreak, KeepTogether
 
 
 def _font_names():
     regular_candidates = [
         Path('C:/Windows/Fonts/arial.ttf'), Path('C:/Windows/Fonts/calibri.ttf'),
+        Path('/usr/share/fonts/truetype/noto/NotoSans-Regular.ttf'),
         Path('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf')]
     bold_candidates = [
         Path('C:/Windows/Fonts/arialbd.ttf'), Path('C:/Windows/Fonts/calibrib.ttf'),
+        Path('/usr/share/fonts/truetype/noto/NotoSans-Bold.ttf'),
         Path('/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf')]
     regular = next((p for p in regular_candidates if p.exists()), None)
     bold = next((p for p in bold_candidates if p.exists()), None)
     if regular and bold:
         pdfmetrics.registerFont(TTFont('HEDSS', str(regular)))
         pdfmetrics.registerFont(TTFont('HEDSS-Bold', str(bold)))
+        pdfmetrics.registerFontFamily('HEDSS', normal='HEDSS', bold='HEDSS-Bold', italic='HEDSS', boldItalic='HEDSS-Bold')
+        addMapping('HEDSS', 0, 0, 'HEDSS')
+        addMapping('HEDSS', 1, 0, 'HEDSS-Bold')
+        addMapping('HEDSS', 0, 1, 'HEDSS')
+        addMapping('HEDSS', 1, 1, 'HEDSS-Bold')
         return 'HEDSS','HEDSS-Bold'
     return 'Helvetica','Helvetica-Bold'
 
@@ -78,11 +86,6 @@ def build_pdf_report(a, v, analysis, result, saved, determinants, score_label):
         tab=Table(rows,colWidths=[45*mm,16*mm,18*mm,97*mm],repeatRows=1)
         tab.setStyle(TableStyle([('GRID',(0,0),(-1,-1),0.35,colors.HexColor('#c7d0da')),('BACKGROUND',(0,0),(-1,0),colors.HexColor('#eef2f7')),('VALIGN',(0,0),(-1,-1),'TOP'),('FONTNAME',(1,1),(2,-1),font),('FONTSIZE',(1,1),(2,-1),7),('LEFTPADDING',(0,0),(-1,-1),4),('RIGHTPADDING',(0,0),(-1,-1),4),('TOPPADDING',(0,0),(-1,-1),3),('BOTTOMPADDING',(0,0),(-1,-1),3)]))
         story.extend([title,tab,Spacer(1,3*mm)])
-    story.append(Paragraph('Najważniejsze rekomendacje',styles['H2x']))
-    recs=result.get('recommendations',[])[:10]
-    if recs:
-        for i,r in enumerate(recs,1): story.append(Paragraph(f"<b>{i}. {r['determinant']} - {r['indicator']}</b><br/>{r['text']}",styles['Bodyx']))
-    else: story.append(Paragraph('Brak automatycznych rekomendacji. Sprawdź, czy oceny zostały uzupełnione i zweryfikowane.',styles['Bodyx']))
     story.append(Paragraph('Ograniczenie',styles['H2x']))
     story.append(Paragraph('Raport jest oparty na wprowadzonym tekście calla, krótkim opisie projektu oraz ocenach MDSM. Automatyczna sugestia nie stanowi oficjalnej oceny Komisji Europejskiej ani prognozy finansowania. Determinanty wymagające danych o konsorcjum, instytucjach, liderze, zarządzaniu i budżecie powinny zostać ocenione na podstawie pełnej dokumentacji.',styles['Bodyx']))
     doc.build(story); return buf.getvalue()
