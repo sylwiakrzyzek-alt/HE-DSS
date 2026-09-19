@@ -1,0 +1,14 @@
+:root{--navy:#12233f;--blue:#2559a7;--teal:#1e7b77;--bg:#f5f7fb;--line:#dce3ed;--muted:#657287}
+.stApp{background:var(--bg)}
+.block-container{padding-top:1.5rem;max-width:1500px}
+.hero{padding:2rem 2.2rem;border:1px solid var(--line);border-radius:20px;background:linear-gradient(135deg,#ffffff,#edf3fb);margin-bottom:1.2rem;box-shadow:0 8px 30px rgba(20,45,80,.06)}
+.hero h1{margin:0;color:var(--navy);font-size:2.35rem}.hero p{color:var(--muted);font-size:1.05rem;margin:.4rem 0 0}
+.small-muted{color:var(--muted);font-size:.9rem}
+.score-card{border:1px solid var(--line);border-radius:16px;padding:1rem;background:white;box-shadow:0 4px 16px rgba(20,45,80,.04)}
+.alignment-card{border-left:5px solid var(--blue);background:#fff;border-radius:14px;padding:1rem 1.2rem;margin:.45rem 0;border-top:1px solid var(--line);border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.det-card{background:white;border:1px solid var(--line);border-radius:16px;padding:1rem 1.1rem;margin:.35rem 0}
+.badge{display:inline-block;padding:.25rem .55rem;border-radius:999px;background:#e8eef8;color:var(--navy);font-size:.82rem;font-weight:600}
+.stButton>button{border-radius:11px;font-weight:600}
+[data-testid="stMetric"]{background:white;border:1px solid var(--line);padding:1rem;border-radius:14px}
+[data-testid="stSidebar"]{background:#eef2f8}
+textarea{font-family:Inter,Arial,sans-serif!important}
