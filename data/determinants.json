@@ -1,0 +1,749 @@
+[
+  {
+    "id": "D01",
+    "name": "Doskonałość naukowa projektu",
+    "weight": 26.785714285714285,
+    "category": "Wniosek",
+    "definition": "Trafność problemu badawczego; Solidne podstawy teoretyczne; Adekwatność metodologii; Spójność celów i metod; Realizm naukowy; Jasność uzasadnienia.",
+    "indicators": [
+      {
+        "id": "D01_I01",
+        "name": "Trafność problemu badawczego",
+        "share": 24.0,
+        "description": "Odnosi się do znaczenia podejmowanego problemu, jego aktualności oraz zgodności z najważniejszymi wyzwaniami badawczymi i społecznymi. Obejmuje również zdolność autorów do wykazania, dlaczego dany problem wymaga dalszych badań.",
+        "question": "Czy problem jest istotny, aktualny i przekonująco uzasadniony?",
+        "recommendation": "Doprecyzuj znaczenie problemu, jego aktualność oraz konsekwencje braku podjęcia badań.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 24.0,
+        "display_share": 24.0
+      },
+      {
+        "id": "D01_I02",
+        "name": "Solidne podstawy teoretyczne",
+        "share": 20.0,
+        "description": "Dotyczy stopnia osadzenia projektu w aktualnym stanie wiedzy, znajomości literatury przedmiotu oraz umiejętności identyfikacji luki badawczej stanowiącej punkt wyjścia dla projektu.",
+        "question": "Czy projekt jest osadzony w aktualnym stanie wiedzy i wyraźnie identyfikuje lukę badawczą?",
+        "recommendation": "Uzupełnij stan wiedzy i pokaż jednoznacznie, jaką lukę projekt wypełnia.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 20.0,
+        "display_share": 20.0
+      },
+      {
+        "id": "D01_I03",
+        "name": "Adekwatność metodologii",
+        "share": 18.0,
+        "description": "Obejmuje dobór metod badawczych odpowiadających celom projektu oraz możliwość uzyskania wiarygodnych i rzetelnych wyników.",
+        "question": "Czy metody odpowiadają celom i umożliwiają uzyskanie wiarygodnych wyników?",
+        "recommendation": "Wykaż związek każdej metody z celem, pytaniem badawczym i planowanym wynikiem.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 18.0,
+        "display_share": 18.0
+      },
+      {
+        "id": "D01_I04",
+        "name": "Spójność celów i metod",
+        "share": 16.0,
+        "description": "Dotyczy logicznego powiązania problemu badawczego, celów projektu, pytań badawczych, metod oraz oczekiwanych rezultatów.",
+        "question": "Czy problem, cele, pytania, metody i rezultaty tworzą spójny układ?",
+        "recommendation": "Usuń rozbieżności między celami, pytaniami, zadaniami, metodami i rezultatami.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 16.0,
+        "display_share": 16.0
+      },
+      {
+        "id": "D01_I05",
+        "name": "Realizm naukowy",
+        "share": 12.0,
+        "description": "Odnosi się do wykonalności projektu z perspektywy naukowej oraz prawdopodobieństwa osiągnięcia deklarowanych rezultatów.",
+        "question": "Czy zakres badań jest wykonalny przy dostępnych zasobach i czasie?",
+        "recommendation": "Ogranicz zakres lub wzmocnij plan realizacji, aby ambitne cele były wiarygodne.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 12.0,
+        "display_share": 12.0
+      },
+      {
+        "id": "D01_I06",
+        "name": "Jasność uzasadnienia",
+        "share": 10.0,
+        "description": "Obejmuje umiejętność przekonującego przedstawienia wartości naukowej projektu oraz argumentacji uzasadniającej potrzebę realizacji badań.",
+        "question": "Czy wartość naukowa projektu została przedstawiona jasno i przekonująco?",
+        "recommendation": "Wzmocnij główną argumentację naukową i pokaż, dlaczego projekt zasługuje na finansowanie.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 10.0,
+        "display_share": 10.0
+      }
+    ],
+    "source": "Rozdział 4 rozprawy doktorskiej - struktura podtematów determinanty"
+  },
+  {
+    "id": "D02",
+    "name": "Jasność i spójność logiczna wniosku",
+    "weight": 23.809523809523807,
+    "category": "Wniosek",
+    "definition": "Logiczny przepływ argumentacji; Jasno zdefiniowane cele; Struktura wniosku; Powiązanie części projektu; Kompletność informacji.",
+    "indicators": [
+      {
+        "id": "D02_I01",
+        "name": "Logiczny przepływ argumentacji",
+        "share": 24.444444,
+        "description": "Spójność narracji prowadzącej od problemu badawczego do rezultatów projektu.",
+        "question": "Czy narracja prowadzi konsekwentnie od problemu do rezultatów?",
+        "recommendation": "Przebuduj narrację tak, aby każdy element wynikał z poprzedniego.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 22.0,
+        "display_share": 24.4
+      },
+      {
+        "id": "D02_I02",
+        "name": "Jasno zdefiniowane cele",
+        "share": 22.222222,
+        "description": "Precyzyjne określenie celów projektu i ich wzajemnych zależności.",
+        "question": "Czy cele są precyzyjne, mierzalne i wzajemnie spójne?",
+        "recommendation": "Przeformułuj cele, usuń ogólniki i wskaż ich relacje.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 20.0,
+        "display_share": 22.2
+      },
+      {
+        "id": "D02_I03",
+        "name": "Struktura wniosku",
+        "share": 22.222222,
+        "description": "Przejrzysta organizacja dokumentu oraz logiczny układ poszczególnych części.",
+        "question": "Czy układ dokumentu ułatwia śledzenie logiki projektu?",
+        "recommendation": "Uporządkuj sekcje i przenieś informacje do miejsc, w których recenzent ich oczekuje.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 20.0,
+        "display_share": 22.2
+      },
+      {
+        "id": "D02_I04",
+        "name": "Powiązanie części projektu",
+        "share": 20.0,
+        "description": "Spójność pomiędzy problemem badawczym, metodologią, zadaniami i rezultatami.",
+        "question": "Czy metodologia, zadania, rezultaty i wpływ są ze sobą wyraźnie połączone?",
+        "recommendation": "Dodaj jawne powiązania między celami, zadaniami, rezultatami, deliverables i wpływem.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 18.0,
+        "display_share": 20.0
+      },
+      {
+        "id": "D02_I05",
+        "name": "Kompletność informacji",
+        "share": 11.111111,
+        "description": "Dostarczenie wszystkich informacji niezbędnych do oceny projektu.",
+        "question": "Czy wniosek zawiera wszystkie informacje niezbędne do oceny bez domyślania się?",
+        "recommendation": "Uzupełnij brakujące założenia, dane, uzasadnienia i odpowiedzialności.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 10.0,
+        "display_share": 11.1
+      }
+    ],
+    "source": "Rozdział 4 rozprawy doktorskiej - struktura podtematów determinanty"
+  },
+  {
+    "id": "D03",
+    "name": "Zarządzanie projektem",
+    "weight": 12.5,
+    "category": "Wniosek",
+    "definition": "Realistyczny harmonogram; Jasny podział ról; Zarządzanie ryzykiem; Mechanizmy decyzyjne; Monitorowanie postępów; Elastyczność zarządzania.",
+    "indicators": [
+      {
+        "id": "D03_I01",
+        "name": "Realistyczny harmonogram",
+        "share": 22.0,
+        "description": "Odpowiednie rozłożenie działań projektowych w czasie oraz wykonalność planu realizacji projektu.",
+        "question": "Czy kolejność i czas działań są realistyczne?",
+        "recommendation": "Skoryguj zależności, kamienie milowe i bufory czasowe.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 22.0,
+        "display_share": 22.0
+      },
+      {
+        "id": "D03_I02",
+        "name": "Jasny podział ról",
+        "share": 20.0,
+        "description": "Precyzyjne określenie odpowiedzialności poszczególnych partnerów i członków zespołu projektowego.",
+        "question": "Czy odpowiedzialność partnerów i osób jest jednoznaczna?",
+        "recommendation": "Doprecyzuj role, liderów zadań i odpowiedzialność za rezultaty.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 20.0,
+        "display_share": 20.0
+      },
+      {
+        "id": "D03_I03",
+        "name": "Zarządzanie ryzykiem",
+        "share": 18.0,
+        "description": "Identyfikacja potencjalnych zagrożeń oraz sposobów ich minimalizacji.",
+        "question": "Czy zidentyfikowano istotne ryzyka i adekwatne działania zaradcze?",
+        "recommendation": "Rozbuduj rejestr ryzyk o prawdopodobieństwo, wpływ, właściciela i reakcję.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 18.0,
+        "display_share": 18.0
+      },
+      {
+        "id": "D03_I04",
+        "name": "Mechanizmy decyzyjne",
+        "share": 16.0,
+        "description": "Procedury podejmowania decyzji i rozwiązywania problemów pojawiających się w trakcie realizacji projektu.",
+        "question": "Czy opisano podejmowanie decyzji i rozwiązywanie sporów?",
+        "recommendation": "Zdefiniuj organy, tryb głosowania, eskalację i procedury rozwiązywania konfliktów.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 16.0,
+        "display_share": 16.0
+      },
+      {
+        "id": "D03_I05",
+        "name": "Monitorowanie postępów",
+        "share": 14.0,
+        "description": "System kontroli realizacji projektu oraz raportowania osiąganych rezultatów.",
+        "question": "Czy postęp będzie mierzony za pomocą konkretnych wskaźników i raportów?",
+        "recommendation": "Dodaj KPI, kamienie milowe, częstotliwość przeglądów i odpowiedzialność za monitoring.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 14.0,
+        "display_share": 14.0
+      },
+      {
+        "id": "D03_I06",
+        "name": "Elastyczność zarządzania",
+        "share": 10.0,
+        "description": "Zdolność adaptacji do zmian i reagowania na nieprzewidziane okoliczności.",
+        "question": "Czy plan pozwala reagować na nieprzewidziane zmiany?",
+        "recommendation": "Opisz procedury adaptacji planu bez utraty celów i jakości projektu.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 10.0,
+        "display_share": 10.0
+      }
+    ],
+    "source": "Rozdział 4 rozprawy doktorskiej - struktura podtematów determinanty"
+  },
+  {
+    "id": "D04",
+    "name": "Język i czytelność wniosku",
+    "weight": 8.928571428571429,
+    "category": "Wniosek",
+    "definition": "Klarowność języka; Precyzja terminologiczna; Unikanie żargonu; Poprawność językowa; Zwięzłość.",
+    "indicators": [
+      {
+        "id": "D04_I01",
+        "name": "Klarowność języka",
+        "share": 33.333333,
+        "description": "Stosowanie prostego, zrozumiałego i jednoznacznego języka umożliwiającego łatwe zrozumienie projektu przez ekspertów.",
+        "question": "Czy tekst jest prosty, jednoznaczny i zrozumiały?",
+        "recommendation": "Uprość zdania, usuń wieloznaczności i wyjaśnij złożone pojęcia.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 26.0,
+        "display_share": 33.3
+      },
+      {
+        "id": "D04_I02",
+        "name": "Precyzja terminologiczna",
+        "share": 23.076923,
+        "description": "Spójne stosowanie pojęć oraz poprawność terminologiczna.",
+        "question": "Czy terminy są używane konsekwentnie i poprawnie?",
+        "recommendation": "Ujednolić terminologię, skróty i nazwy kluczowych elementów projektu.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 18.0,
+        "display_share": 23.1
+      },
+      {
+        "id": "D04_I03",
+        "name": "Unikanie żargonu",
+        "share": 17.948718,
+        "description": "Ograniczanie nadmiernie specjalistycznego języka utrudniającego odbiór projektu.",
+        "question": "Czy tekst jest zrozumiały także dla eksperta spoza wąskiej specjalizacji?",
+        "recommendation": "Ogranicz żargon i dodaj krótkie wyjaśnienia niezbędnych terminów specjalistycznych.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 14.0,
+        "display_share": 17.9
+      },
+      {
+        "id": "D04_I04",
+        "name": "Poprawność językowa",
+        "share": 12.820513,
+        "description": "Jakość języka angielskiego oraz poprawność redakcyjna dokumentu.",
+        "question": "Czy dokument jest wolny od błędów językowych i redakcyjnych?",
+        "recommendation": "Przeprowadź profesjonalną korektę językową i redakcyjną.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 10.0,
+        "display_share": 12.8
+      },
+      {
+        "id": "D04_I05",
+        "name": "Zwięzłość",
+        "share": 12.820513,
+        "description": "Umiejętność syntetycznego przedstawiania informacji bez nadmiernych powtórzeń.",
+        "question": "Czy informacje są przedstawione syntetycznie?",
+        "recommendation": "Skróć opisy i usuń treści, które nie wspierają argumentacji lub oceny.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 10.0,
+        "display_share": 12.8
+      }
+    ],
+    "source": "Rozdział 4 rozprawy doktorskiej - struktura podtematów determinanty"
+  },
+  {
+    "id": "D05",
+    "name": "Innowacyjność",
+    "weight": 4.761904761904762,
+    "category": "Wniosek",
+    "definition": "Nowa koncepcja; Luka badawcza; Nowe podejście metodologiczne; Wartość dodana; Integracja istniejących rozwiązań; Wiarygodność innowacji.",
+    "indicators": [
+      {
+        "id": "D05_I01",
+        "name": "Nowa koncepcja",
+        "share": 24.0,
+        "description": "Oryginalność pomysłu badawczego oraz proponowanie nowych sposobów rozwiązywania problemów naukowych lub praktycznych.",
+        "question": "Czy projekt proponuje oryginalny sposób rozwiązania problemu?",
+        "recommendation": "Wyraźnie nazwij nowy element koncepcji i odróżnij go od istniejących podejść.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 24.0,
+        "display_share": 24.0
+      },
+      {
+        "id": "D05_I02",
+        "name": "Luka badawcza",
+        "share": 20.0,
+        "description": "Identyfikacja obszarów niewystarczająco rozpoznanych w literaturze oraz uzasadnienie potrzeby podjęcia badań.",
+        "question": "Czy luka jest konkretna i poparta stanem wiedzy?",
+        "recommendation": "Zdefiniuj lukę precyzyjnie i pokaż, dlaczego dotychczasowe badania jej nie rozwiązują.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 20.0,
+        "display_share": 20.0
+      },
+      {
+        "id": "D05_I03",
+        "name": "Nowe podejście metodologiczne",
+        "share": 18.0,
+        "description": "Wykorzystanie nowych metod, narzędzi lub procedur badawczych zwiększających wartość projektu.",
+        "question": "Czy metody lub procedury wnoszą istotną nowość?",
+        "recommendation": "Wykaż, co jest nowe w metodzie i jaki problem pozwala to rozwiązać.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 18.0,
+        "display_share": 18.0
+      },
+      {
+        "id": "D05_I04",
+        "name": "Wartość dodana",
+        "share": 16.0,
+        "description": "Zdolność projektu do generowania nowej wiedzy lub rozwiązań wykraczających poza istniejący stan wiedzy.",
+        "question": "Czy projekt generuje wiedzę lub rozwiązania wykraczające poza stan obecny?",
+        "recommendation": "Doprecyzuj mierzalną wartość dodaną naukową i praktyczną.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 16.0,
+        "display_share": 16.0
+      },
+      {
+        "id": "D05_I05",
+        "name": "Integracja istniejących rozwiązań",
+        "share": 12.0,
+        "description": "Twórcze łączenie istniejących koncepcji, metod lub technologii w nową całość.",
+        "question": "Czy połączenie istniejących rozwiązań tworzy jakościowo nową całość?",
+        "recommendation": "Pokaż synergię elementów i efekt niemożliwy do osiągnięcia osobno.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 12.0,
+        "display_share": 12.0
+      },
+      {
+        "id": "D05_I06",
+        "name": "Wiarygodność innowacji",
+        "share": 10.0,
+        "description": "Realistyczne uzasadnienie możliwości wdrożenia oraz osiągnięcia deklarowanych rezultatów innowacyjnych.",
+        "question": "Czy innowacyjne rezultaty mają realistyczną ścieżkę osiągnięcia?",
+        "recommendation": "Dodaj dowody wykonalności, pilotaż, dane wstępne lub plan walidacji.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 10.0,
+        "display_share": 10.0
+      }
+    ],
+    "source": "Rozdział 4 rozprawy doktorskiej - struktura podtematów determinanty"
+  },
+  {
+    "id": "D06",
+    "name": "Jakość konsorcjum",
+    "weight": 4.761904761904762,
+    "category": "Instytucja",
+    "definition": "Komplementarność kompetencji; Jasne role partnerów; Równowaga sektorów; Koordynacja współpracy; Adekwatna liczba partnerów.",
+    "indicators": [
+      {
+        "id": "D06_I01",
+        "name": "Komplementarność kompetencji",
+        "share": 29.268293,
+        "description": "Stopień, w jakim partnerzy projektu wnoszą uzupełniające się kompetencje naukowe, techniczne i organizacyjne.",
+        "question": "Czy kompetencje partnerów są kompletne i wzajemnie się uzupełniają?",
+        "recommendation": "Uzupełnij brakujące kompetencje lub ogranicz dublowanie ról partnerów.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 24.0,
+        "display_share": 29.3
+      },
+      {
+        "id": "D06_I02",
+        "name": "Jasne role partnerów",
+        "share": 24.390244,
+        "description": "Precyzyjne określenie odpowiedzialności poszczególnych instytucji oraz ich wkładu w realizację projektu.",
+        "question": "Czy wkład każdego partnera jest uzasadniony i jednoznaczny?",
+        "recommendation": "Powiąż każdego partnera z konkretnymi zadaniami, zasobami i rezultatami.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 20.0,
+        "display_share": 24.4
+      },
+      {
+        "id": "D06_I03",
+        "name": "Równowaga sektorów",
+        "share": 17.073171,
+        "description": "Odpowiedni udział przedstawicieli różnych sektorów, takich jak nauka, biznes czy administracja publiczna.",
+        "question": "Czy skład sektorowy odpowiada potrzebom projektu?",
+        "recommendation": "Dodaj brakujący typ podmiotu tylko wtedy, gdy wnosi niezbędną rolę i zasoby.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 14.0,
+        "display_share": 17.1
+      },
+      {
+        "id": "D06_I04",
+        "name": "Koordynacja współpracy",
+        "share": 17.073171,
+        "description": "Mechanizmy komunikacji i współpracy pomiędzy partnerami projektu.",
+        "question": "Czy opisano efektywną komunikację i współpracę partnerów?",
+        "recommendation": "Doprecyzuj kanały komunikacji, częstotliwość spotkań i procedury koordynacji.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 14.0,
+        "display_share": 17.1
+      },
+      {
+        "id": "D06_I05",
+        "name": "Adekwatna liczba partnerów",
+        "share": 12.195121,
+        "description": "Optymalny dobór liczby instytucji uczestniczących w projekcie.",
+        "question": "Czy liczba partnerów odpowiada zakresowi zadań bez nadmiernej złożoności?",
+        "recommendation": "Zweryfikuj, czy każdy partner jest niezbędny i czy nie brakuje kluczowej zdolności.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 10.0,
+        "display_share": 12.2
+      }
+    ],
+    "source": "Rozdział 4 rozprawy doktorskiej - struktura podtematów determinanty"
+  },
+  {
+    "id": "D07",
+    "name": "Renoma instytucji",
+    "weight": 4.761904761904762,
+    "category": "Instytucja",
+    "definition": "Doświadczenie projektowe; Dorobek naukowy.",
+    "indicators": [
+      {
+        "id": "D07_I01",
+        "name": "Doświadczenie projektowe",
+        "share": 63.636364,
+        "description": "Wcześniejsze uczestnictwo instytucji w projektach finansowanych ze środków UE oraz skuteczność ich realizacji.",
+        "question": "Czy lider ma adekwatne doświadczenie w projektach międzynarodowych?",
+        "recommendation": "Wyeksponuj doświadczenie lidera odpowiadające skali i złożoności projektu.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 28.0,
+        "display_share": 63.6
+      },
+      {
+        "id": "D07_I02",
+        "name": "Dorobek naukowy",
+        "share": 36.363636,
+        "description": "Osiągnięcia naukowe instytucji, jakość prowadzonych badań oraz pozycja w środowisku akademickim.",
+        "question": "Czy dorobek partnerów odpowiada tematyce i zadaniom projektu?",
+        "recommendation": "Powiąż najważniejsze osiągnięcia partnerów bezpośrednio z ich rolami w projekcie.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 16.0,
+        "display_share": 36.4
+      }
+    ],
+    "source": "Rozdział 4 rozprawy doktorskiej - struktura podtematów determinanty"
+  },
+  {
+    "id": "D08",
+    "name": "Wpływ projektu (Impact)",
+    "weight": 4.761904761904762,
+    "category": "Wniosek",
+    "definition": "Korzyści społeczne; Korzyści gospodarcze; Wpływ naukowy; Strategia upowszechniania; Wykorzystanie wyników; Długofalowe efekty.",
+    "indicators": [
+      {
+        "id": "D08_I01",
+        "name": "Korzyści społeczne",
+        "share": 24.0,
+        "description": "Potencjalne oddziaływanie projektu na społeczeństwo, jakość życia, zdrowie, edukację lub inne obszary istotne społecznie.",
+        "question": "Czy społeczne korzyści są konkretne, wiarygodne i powiązane z potrzebami?",
+        "recommendation": "Doprecyzuj grupy docelowe, zmianę społeczną i mierniki korzyści.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 24.0,
+        "display_share": 24.0
+      },
+      {
+        "id": "D08_I02",
+        "name": "Korzyści gospodarcze",
+        "share": 20.0,
+        "description": "Możliwe efekty ekonomiczne projektu, takie jak wzrost konkurencyjności, rozwój technologii lub wsparcie innowacji.",
+        "question": "Czy opisano realistyczne efekty gospodarcze lub innowacyjne?",
+        "recommendation": "Pokaż mechanizm przejścia od rezultatów projektu do korzyści gospodarczych.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 20.0,
+        "display_share": 20.0
+      },
+      {
+        "id": "D08_I03",
+        "name": "Wpływ naukowy",
+        "share": 18.0,
+        "description": "Wkład projektu w rozwój wiedzy, tworzenie nowych kierunków badań i rozwój dyscypliny naukowej.",
+        "question": "Czy projekt wyraźnie wnosi do rozwoju wiedzy i dyscypliny?",
+        "recommendation": "Wskaż nowe zasoby, dane, metody, teorie lub kierunki badań i ich odbiorców.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 18.0,
+        "display_share": 18.0
+      },
+      {
+        "id": "D08_I04",
+        "name": "Strategia upowszechniania",
+        "share": 14.0,
+        "description": "Działania związane z upowszechnianiem wyników oraz komunikacją rezultatów do różnych grup odbiorców.",
+        "question": "Czy działania komunikacyjne i upowszechniające są dopasowane do odbiorców?",
+        "recommendation": "Zróżnicuj kanały, odbiorców, terminy, odpowiedzialność i mierniki dotarcia.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 14.0,
+        "display_share": 14.0
+      },
+      {
+        "id": "D08_I05",
+        "name": "Wykorzystanie wyników",
+        "share": 14.0,
+        "description": "Sposoby wdrażania i praktycznego zastosowania rezultatów projektu po zakończeniu badań.",
+        "question": "Czy istnieje realny plan wdrożenia lub wykorzystania rezultatów?",
+        "recommendation": "Przypisz rezultatom właścicieli, użytkowników, ścieżki wykorzystania i zasoby.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 14.0,
+        "display_share": 14.0
+      },
+      {
+        "id": "D08_I06",
+        "name": "Długofalowe efekty",
+        "share": 10.0,
+        "description": "Trwałość rezultatów projektu oraz ich potencjalny wpływ w dłuższej perspektywie czasowej.",
+        "question": "Czy rezultaty i korzyści będą trwałe po zakończeniu finansowania?",
+        "recommendation": "Dodaj plan trwałości, skalowania, utrzymania zasobów i dalszego finansowania.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 10.0,
+        "display_share": 10.0
+      }
+    ],
+    "source": "Rozdział 4 rozprawy doktorskiej - struktura podtematów determinanty"
+  },
+  {
+    "id": "D09",
+    "name": "Interdyscyplinarność",
+    "weight": 2.976190476190476,
+    "category": "Wniosek",
+    "definition": "Integracja dyscyplin; Wspólne pytanie badawcze; Synergia metod; Wspólny język współpracy; Współpraca sektorowa; Nowa jakość wiedzy.",
+    "indicators": [
+      {
+        "id": "D09_I01",
+        "name": "Integracja dyscyplin",
+        "share": 28.0,
+        "description": "Rzeczywiste łączenie wiedzy, teorii i metod pochodzących z różnych dziedzin nauki.",
+        "question": "Czy wiedza z różnych dyscyplin jest rzeczywiście integrowana?",
+        "recommendation": "Pokaż miejsca, w których dyscypliny wspólnie tworzą metodę, wynik lub interpretację.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 28.0,
+        "display_share": 28.0
+      },
+      {
+        "id": "D09_I02",
+        "name": "Wspólne pytanie badawcze",
+        "share": 22.0,
+        "description": "Formułowanie problemu wymagającego współpracy przedstawicieli różnych dyscyplin.",
+        "question": "Czy problem wymaga wkładu różnych dyscyplin?",
+        "recommendation": "Sformułuj wspólny problem, którego nie da się rozwiązać w jednej dyscyplinie.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 22.0,
+        "display_share": 22.0
+      },
+      {
+        "id": "D09_I03",
+        "name": "Synergia metod",
+        "share": 18.0,
+        "description": "Wykorzystanie komplementarnych metod badawczych pochodzących z różnych obszarów nauki.",
+        "question": "Czy metody z różnych obszarów są komplementarne?",
+        "recommendation": "Wyjaśnij, jak wyniki jednej metody zasilają lub walidują pozostałe.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 18.0,
+        "display_share": 18.0
+      },
+      {
+        "id": "D09_I04",
+        "name": "Wspólny język współpracy",
+        "share": 14.0,
+        "description": "Zdolność przedstawicieli różnych dyscyplin do efektywnej komunikacji.",
+        "question": "Czy zespół ma mechanizmy komunikacji międzydyscyplinarnej?",
+        "recommendation": "Dodaj wspólne definicje, warsztaty integracyjne i procedury uzgadniania pojęć.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 14.0,
+        "display_share": 14.0
+      },
+      {
+        "id": "D09_I05",
+        "name": "Współpraca sektorowa",
+        "share": 10.0,
+        "description": "Integracja środowiska akademickiego, biznesu, administracji publicznej i organizacji społecznych.",
+        "question": "Czy współpraca między sektorami ma merytoryczne uzasadnienie?",
+        "recommendation": "Powiąż udział sektorów z konkretnymi zadaniami, zasobami i ścieżką wpływu.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 10.0,
+        "display_share": 10.0
+      },
+      {
+        "id": "D09_I06",
+        "name": "Nowa jakość wiedzy",
+        "share": 8.0,
+        "description": "Powstawanie nowych koncepcji i sposobów interpretacji wynikających z integracji różnych perspektyw.",
+        "question": "Czy integracja perspektyw prowadzi do wyników niemożliwych do uzyskania osobno?",
+        "recommendation": "Nazwij nową jakość poznawczą wynikającą z integracji dyscyplin.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 8.0,
+        "display_share": 8.0
+      }
+    ],
+    "source": "Rozdział 4 rozprawy doktorskiej - struktura podtematów determinanty"
+  },
+  {
+    "id": "D10",
+    "name": "Przejrzystość prezentacji projektu",
+    "weight": 2.380952380952381,
+    "category": "Wniosek",
+    "definition": "Czytelny układ; Tabele i schematy; Wyróżnianie kluczowych informacji; Estetyka dokumentu.",
+    "indicators": [
+      {
+        "id": "D10_I01",
+        "name": "Czytelny układ",
+        "share": 36.585366,
+        "description": "Logiczna organizacja dokumentu, odpowiedni podział sekcji oraz przejrzysty układ treści.",
+        "question": "Czy struktura i układ stron ułatwiają szybkie odnajdywanie informacji?",
+        "recommendation": "Ujednolić hierarchię nagłówków, odstępy, listy i rozmieszczenie treści.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 30.0,
+        "display_share": 36.6
+      },
+      {
+        "id": "D10_I02",
+        "name": "Tabele i schematy",
+        "share": 29.268293,
+        "description": "Wykorzystanie elementów wizualnych wspierających zrozumienie projektu i jego struktury.",
+        "question": "Czy wizualizacje upraszczają złożone informacje?",
+        "recommendation": "Zastąp długie opisy tabelami lub schematami tam, gdzie poprawi to zrozumienie.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 24.0,
+        "display_share": 29.3
+      },
+      {
+        "id": "D10_I03",
+        "name": "Wyróżnianie kluczowych informacji",
+        "share": 17.073171,
+        "description": "Stosowanie nagłówków, podsumowań i innych elementów ułatwiających identyfikację najważniejszych treści.",
+        "question": "Czy najważniejsze treści są łatwe do identyfikacji?",
+        "recommendation": "Stosuj krótkie podsumowania, nagłówki i konsekwentne wyróżnienia.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 14.0,
+        "display_share": 17.1
+      },
+      {
+        "id": "D10_I04",
+        "name": "Estetyka dokumentu",
+        "share": 17.073171,
+        "description": "Profesjonalny wygląd dokumentu oraz jego ogólna czytelność wizualna.",
+        "question": "Czy dokument wygląda profesjonalnie i spójnie?",
+        "recommendation": "Ujednolić formatowanie, jakość grafik, podpisy i numerację.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 14.0,
+        "display_share": 17.1
+      }
+    ],
+    "source": "Rozdział 4 rozprawy doktorskiej - struktura podtematów determinanty"
+  },
+  {
+    "id": "D11",
+    "name": "Kompetencje lidera projektu",
+    "weight": 1.7857142857142856,
+    "category": "Indywidualna",
+    "definition": "Doświadczenie projektowe; Autorytet naukowy.",
+    "indicators": [
+      {
+        "id": "D11_I01",
+        "name": "Doświadczenie projektowe",
+        "share": 66.666667,
+        "description": "Wcześniejsze doświadczenie lidera w kierowaniu projektami badawczymi i międzynarodowymi konsorcjami.",
+        "question": "Czy lider ma adekwatne doświadczenie w projektach międzynarodowych?",
+        "recommendation": "Wyeksponuj doświadczenie lidera odpowiadające skali i złożoności projektu.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 28.0,
+        "display_share": 66.7
+      },
+      {
+        "id": "D11_I02",
+        "name": "Autorytet naukowy",
+        "share": 33.333333,
+        "description": "Dorobek naukowy, reputacja i pozycja lidera w środowisku badawczym.",
+        "question": "Czy pozycja naukowa lidera wspiera wiarygodność koncepcji?",
+        "recommendation": "Powiąż dorobek lidera z tematyką, metodami i celami projektu.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 14.0,
+        "display_share": 33.3
+      }
+    ],
+    "source": "Rozdział 4 rozprawy doktorskiej - struktura podtematów determinanty"
+  },
+  {
+    "id": "D12",
+    "name": "Realizm budżetu",
+    "weight": 1.7857142857142856,
+    "category": "Wniosek",
+    "definition": "Spójność budżetu z zadaniami; Uzasadnienie wydatków; Proporcjonalność finansowania; Realistyczne koszty pracy.",
+    "indicators": [
+      {
+        "id": "D12_I01",
+        "name": "Spójność budżetu z zadaniami",
+        "share": 34.146341,
+        "description": "Zgodność planowanych kosztów z zakresem prac przewidzianych w projekcie.",
+        "question": "Czy koszty wynikają bezpośrednio z planu pracy?",
+        "recommendation": "Powiąż każdą istotną kategorię kosztu z zadaniem, rezultatem i nakładem pracy.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 28.0,
+        "display_share": 34.1
+      },
+      {
+        "id": "D12_I02",
+        "name": "Uzasadnienie wydatków",
+        "share": 26.829268,
+        "description": "Przejrzystość i racjonalność argumentacji dotyczącej poszczególnych pozycji budżetowych.",
+        "question": "Czy kluczowe wydatki są przejrzyście i racjonalnie uzasadnione?",
+        "recommendation": "Rozbuduj uzasadnienia kosztów nietypowych, wysokich lub krytycznych dla projektu.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 22.0,
+        "display_share": 26.8
+      },
+      {
+        "id": "D12_I03",
+        "name": "Proporcjonalność finansowania",
+        "share": 21.95122,
+        "description": "Adekwatny podział środków pomiędzy partnerów projektu i poszczególne zadania.",
+        "question": "Czy podział budżetu odpowiada odpowiedzialności i wkładowi partnerów?",
+        "recommendation": "Skoryguj dysproporcje między rolami, zadaniami, osobomiesiącami i budżetem.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 18.0,
+        "display_share": 22.0
+      },
+      {
+        "id": "D12_I04",
+        "name": "Realistyczne koszty pracy",
+        "share": 17.073171,
+        "description": "Wiarygodność założeń dotyczących wynagrodzeń, nakładów pracy i kosztów realizacji badań.",
+        "question": "Czy nakłady pracy i koszty personelu są wiarygodne?",
+        "recommendation": "Zweryfikuj person-months, stawki i obciążenie zespołów względem zadań.",
+        "source": "Rozdział 4 - analiza tematyczna wywiadów z ekspertami Komisji Europejskiej",
+        "original_share": 14.0,
+        "display_share": 17.1
+      }
+    ],
+    "source": "Rozdział 4 rozprawy doktorskiej - struktura podtematów determinanty"
+  }
+]
