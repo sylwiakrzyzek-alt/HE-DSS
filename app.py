@@ -320,12 +320,6 @@ def page_results() -> None:
                 indicator_rows.append({'Wskaźnik': ind['name'], 'Ocena': item.get('score', 0)})
             st.dataframe(pd.DataFrame(indicator_rows), hide_index=True, use_container_width=True)
 
-    st.subheader('Top 5 recommendations')
-    for i, rec in enumerate(result['recommendations'][:5], 1):
-        with st.container(border=True):
-            st.markdown(f"**{i}. {rec['determinant']} → {rec['indicator']} ({rec['score']:.1f}/5)**")
-            st.write(rec['text'])
-
 
 def report_html(a, v, analysis, result, saved) -> str:
     alignment = analysis.get('alignment') or {}
@@ -338,12 +332,8 @@ def report_html(a, v, analysis, result, saved) -> str:
         f"<tr><td>Structural Alignment Score</td><td>{alignment.get('structural_alignment_score',0)*100:.1f}%</td></tr>",
     ])
     det_rows = ''.join(
-        f"<tr><td>{html.escape(r['id'])}</td><td>{html.escape(r['name'])}</td><td>{r['weight_pct']:.1f}%</td><td>{r['score_100']:.1f}</td><td>{html.escape(score_label(r['score_100']))}</td></tr>"
+        f"<tr><td>{html.escape(r['id'])}</td><td>{html.escape(r['name'])}</td><td>{r['weight_pct']:.2f}%</td><td>{r['score_100']:.1f}</td><td>{html.escape(score_label(r['score_100']))}</td></tr>"
         for r in sorted(result['rows'], key=lambda x: x['id'])
-    )
-    recs = ''.join(
-        f"<li><b>{html.escape(r['determinant'])} — {html.escape(r['indicator'])}</b>: {html.escape(r['text'])}</li>"
-        for r in result['recommendations'][:10]
     )
     return f'''<!doctype html><html><head><meta charset="utf-8"><style>
     body{{font-family:Arial,sans-serif;max-width:1050px;margin:40px auto;line-height:1.5;color:#1d2a3a}}
@@ -357,7 +347,6 @@ def report_html(a, v, analysis, result, saved) -> str:
     <h2>CALL–OBJECTIVE</h2><p>Analiza leksykalna i narracyjna zgodna z procedurą CATA opisaną w rozprawie.</p><table><tr><th>Wskaźnik</th><th>Wartość</th></tr>{area_rows}</table><p><b>SAS:</b> 0,6 × NC + 0,2 × OA + 0,2 × NComp.</p>
     <h2>{len(determinants)} determinant MDSM</h2><p><b>Wynik syntetyczny:</b> {result['overall']:.1f}/100 · <b>Poziom:</b> {html.escape(result['band'])}</p>
     <table><tr><th>ID</th><th>Determinanta</th><th>Waga</th><th>Ocena</th><th>Interpretacja</th></tr>{det_rows}</table>
-    <h2>Top recommendations</h2><ol>{recs}</ol>
     <h2>Ograniczenie</h2><p>Raport jest oparty na wprowadzonym tekście calla, krótkim opisie projektu oraz ocenach MDSM. Nie stanowi oficjalnej oceny Komisji Europejskiej ani prognozy finansowania.</p>
     </body></html>'''
 
